@@ -1,0 +1,45 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add noodemon -D
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\Program Files (x86)\Microchip\mplabc18\v3.47\mpasm;D:\Program Files (x86)\Microchip\mplabc18\v3.47\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\chocolatey\bin;D:\Program Files\Microsoft VS Code\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;D:\Program Files\PuTTY\;C:\php\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\cmder;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;D:\Program Files\Git\cmd;C:\Users\alexa\AppData\Local\Microsoft\WindowsApps;C:\Users\alexa\AppData\Roaming\npm;C:\Users\alexa\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  13.7.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/noodemon: Not found
+      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66056:18)
+      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140665:22)
+      at Request.emit (events.js:321:20)
+      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141637:10)
+      at Request.emit (events.js:321:20)
+      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141559:12)
+      at Object.onceWrapper (events.js:427:28)
+      at IncomingMessage.emit (events.js:333:22)
+      at endReadableNT (_stream_readable.js:1201:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+npm manifest: 
+  {
+    "name": "AgendaBack",
+    "version": "1.0.0",
+    "description": "Backend da aplicação de reserva de para a retomada das Missas na Paróquia Nossa Senhora de Fátima e Comunidades.",
+    "main": "index.js",
+    "repository": "https://github.com/alexandre-uaio/agenda",
+    "author": "Alexandre Souza",
+    "license": "MIT",
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
