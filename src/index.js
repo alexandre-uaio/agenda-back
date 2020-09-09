@@ -3,11 +3,19 @@ const cors = require("cors");
 const { request, response } = require("express"); //Adiciona suport a Express
 const mariadb = require("mariadb"); //Adiciona Suporte a Mariadb
 
-const pool = mariadb.createPool({
+/*const pool = mariadb.createPool({
   host: "127.0.0.1",
   user: "root",
   password: "456008",
   database: "agendamissa",
+  connectionLimit: 5,
+});*/
+
+const pool = mariadb.createPool({
+  host: "mysql.avozdefatima.com.br",
+  user: "avozdefatima01",
+  password: "milo456008",
+  database: "avozdefatima01",
   connectionLimit: 5,
 });
 
@@ -354,7 +362,7 @@ async function VerificaReserva(_dados) {
       console.log(query);
 
       const sql =
-        "insert into time_missa (datamissa,horamissa,comunidade,nome, celular, assento,id,idade)  values('" +
+        "insert into time_missa (datamissa,horamissa,comunidade,nome, celular, assento,id,idade,voluntario)  values('" +
         query.datamissa +
         "','" +
         query.horamissa +
@@ -368,6 +376,8 @@ async function VerificaReserva(_dados) {
         query.assento +
         "',null," +
         query.idade +
+        "','" +
+        query.voluntario +
         ")";
 
       const resp = await conn.query(sql, [1, "mariadb"]);
